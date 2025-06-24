@@ -13,7 +13,7 @@ export default function PopularCastingCalls() {
   ];
 
   return (
-    <div className="grid grid-cols-2 gap-x-1 gap-y-4">
+    <div className="grid md:grid-cols-2 gap-x-1 gap-y-4">
       {dummyData.map((item, index) => (
         <CastingCard key={index} {...item} />
       ))}

@@ -4,6 +4,7 @@ import CastingCard from "../component/CastingCard";
 import MyApplications from "../component/MyApplications";
 import NewCastingCalls from "../component/NewCastingCalls";
 import Topbar from "./TopBar";
+import PopularCastingCalls from "./PopularCastingCalls";
 
 export default function Dashboard() {
   const [selectedSection, setSelectedSection] = useState("popular");
@@ -13,14 +14,7 @@ export default function Dashboard() {
 
   if (selectedSection === "popular") {
     heading = "Popular Casting Calls";
-    Content = (
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <CastingCard role="Acting" />
-        <CastingCard role="Singer" />
-        <CastingCard role="Dancer" />
-        <CastingCard role="Model" />
-      </div>
-    );
+    Content = <PopularCastingCalls/>;
   } else if (selectedSection === "my-applications") {
     heading = "My Applications";
     Content = <MyApplications />;
