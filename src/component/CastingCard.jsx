@@ -52,7 +52,7 @@
 
 import React from "react";
 import Cast from "../assets/castingImg.png";
- 
+
 export default function CastingCard({ role = "Acting" }) {
   return (
     <div
@@ -69,7 +69,7 @@ export default function CastingCard({ role = "Acting" }) {
         />
 
         {/* Role Tag */}
-        <p className="absolute bottom-[-10px] right-10 bg-[#8B3C68] text-white text-sm px-3 py-1">
+        <p className="absolute bottom-[-10px] right-4 bg-[#8B3C68] text-white text-sm px-3 py-1">
           {role}
         </p>
       </div>
@@ -81,18 +81,21 @@ export default function CastingCard({ role = "Acting" }) {
           industry. Lorem Ipsum has been the industry's standard dummy text
         </p>
 
-        <div className="flex items-start gap-2 text-[#555] text-sm mb-4">
-          <div className="flex md:flex-col gap-2 flex-col-1 group-hover:text-[#8B3C68]">
+        {/* Info + Buttons */}
+        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+          {/* Info */}
+          <div className="flex flex-col gap-2 group-hover:text-[#8B3C68]">
             <span>📍 Mumbai</span>
             <span>💰 Paid</span>
             <span>📅 10 May</span>
           </div>
 
-          <div className="ml-auto flex flex-col gap-2 items-end">
-            <button className="w-[110px] sm:w-[131px] h-[29px] border border-[#8B3C68] text-[#060606] text-xs px-3 py-1 hover:bg-[#8B3C68] hover:text-white transition">
+          {/* Buttons */}
+          <div className="flex flex-col gap-2 w-full sm:w-auto">
+            <button className="w-full sm:w-[131px] h-[29px] border border-[#8B3C68] text-[#060606] text-xs px-3 py-1 hover:bg-[#8B3C68] hover:text-white transition">
               4 Days to Expire
             </button>
-            <button className="w-[110px] sm:w-[131px] h-[29px] border border-[#8B3C68] text-[#060606] text-xs px-3 py-1 hover:bg-[#8B3C68] hover:text-white transition">
+            <button className="w-full sm:w-[131px] h-[29px] border border-[#8B3C68] text-[#060606] text-xs px-3 py-1 hover:bg-[#8B3C68] hover:text-white transition">
               Apply Now
             </button>
           </div>
@@ -101,4 +104,5 @@ export default function CastingCard({ role = "Acting" }) {
     </div>
   );
 }
+
 
