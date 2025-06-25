@@ -3,9 +3,7 @@ import Cast from "../assets/castingImg.png";
 
 export default function CastingCard({ role = "Acting" }) {
   return (
-    <div
-      className="font-['Source_Sans_3'] group w-full bg-white shadow-md overflow-hidden border-10 border-transparent hover:border-[#8B3C68] transition-colors duration-200"
-    >
+    <div className="font-['Source_Sans_3'] group w-full bg-white shadow-md overflow-hidden border-10 border-transparent hover:border-[#8B3C68] transition-colors duration-200">
       {/* Card Image */}
       <div className="relative">
         <img

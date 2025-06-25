@@ -27,9 +27,9 @@ export default function Dashboard() {
     <div className="">
       <Topbar />
 
-      <div className="min-h-screen flex flex-col md:flex-row bg-[#f5f5f5] font-[Source Sans 3] gap-4 sm:gap-6 p-2 sm:p-4">
+      <div className="min-h-screen flex flex-col lg:flex-row bg-[#f5f5f5] font-[Source Sans 3] gap-4 sm:gap-6 p-2 sm:p-4">
         {/* Sidebar */}
-        <div className="w-full md:w-[40%] lg:w-[450px] shrink-0 bg-white shadow-md rounded-lg p-4 sm:p-6">
+        <div className="w-full lg:w-[450px] shrink-0 bg-white shadow-md rounded-lg p-4 sm:p-6 flex justify-center" >
           <ProfileCard onSectionChange={setSelectedSection} selected={selectedSection} />
         </div>
 
