@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import ProfileCard from "../component/ProfileCard";
-import CastingCard from "../component/CastingCard";
-import MyApplications from "../component/MyApplications";
-import NewCastingCalls from "../component/NewCastingCalls";
+import ProfileCard from "./ProfileCard";
+import CastingCard from "./CastingCard";
+import MyApplications from "./MyApplications";
+import NewCastingCalls from "./NewCastingCalls";
 import Topbar from "./TopBar";
 import PopularCastingCalls from "./PopularCastingCalls";
 

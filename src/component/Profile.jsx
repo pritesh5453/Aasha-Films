@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import { FiCamera } from "react-icons/fi";
-import Topbar from "./TopBar"; 
+import Topbar from "./TopBar.jsx";
 
 export default function ProfilePage() {
   const fileInputs = {
@@ -50,7 +50,9 @@ export default function ProfilePage() {
                 </div>
               </div>
               {/* Progress text BELOW circle */}
-              <div className="mt-2 text-[#8B3C68] text-sm font-semibold text-center">40%</div>
+              <div className="mt-2 text-[#8B3C68] text-sm font-semibold text-center">
+                40%
+              </div>
             </div>
 
             {/* Text part */}
@@ -70,7 +72,9 @@ export default function ProfilePage() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {/* Personal Information */}
           <div>
-            <h3 className="text-[#8B3C68] font-semibold mb-2">• Personal Information</h3>
+            <h3 className="text-[#8B3C68] font-semibold mb-2">
+              • Personal Information
+            </h3>
             {[
               "Date of Birth*",
               "Gender*",
@@ -90,7 +94,9 @@ export default function ProfilePage() {
 
           {/* Physical Attributes */}
           <div>
-            <h3 className="text-[#8B3C68] font-semibold mb-2">• Physical Attributes</h3>
+            <h3 className="text-[#8B3C68] font-semibold mb-2">
+              • Physical Attributes
+            </h3>
             {[
               "Height*",
               "Weight*",
@@ -109,7 +115,9 @@ export default function ProfilePage() {
 
           {/* Social Media & Availability */}
           <div>
-            <h3 className="text-[#8B3C68] font-semibold mb-2">• Social Media</h3>
+            <h3 className="text-[#8B3C68] font-semibold mb-2">
+              • Social Media
+            </h3>
             {["Instagram Link*", "Facebook Link"].map((item, index) => (
               <input
                 key={index}
@@ -119,7 +127,9 @@ export default function ProfilePage() {
               />
             ))}
 
-            <h3 className="text-[#8B3C68] font-semibold mb-2 mt-4">• Availability</h3>
+            <h3 className="text-[#8B3C68] font-semibold mb-2 mt-4">
+              • Availability
+            </h3>
             {[
               "Available From*",
               "Willing to Travel*",
@@ -136,7 +146,9 @@ export default function ProfilePage() {
 
           {/* Profile Media */}
           <div>
-            <h3 className="text-[#8B3C68] font-semibold mb-2">• Profile Media</h3>
+            <h3 className="text-[#8B3C68] font-semibold mb-2">
+              • Profile Media
+            </h3>
             {[
               { label: "Profile Photo*", refName: "profilePhoto" },
               { label: "Head shot(front facing)", refName: "headShot" },
@@ -166,7 +178,9 @@ export default function ProfilePage() {
 
           {/* Skills & Languages */}
           <div>
-            <h3 className="text-[#8B3C68] font-semibold mb-2">• Skills & Languages</h3>
+            <h3 className="text-[#8B3C68] font-semibold mb-2">
+              • Skills & Languages
+            </h3>
             {[
               "Languages Known",
               "Dialects/Accents",
@@ -184,16 +198,17 @@ export default function ProfilePage() {
           {/* Experience */}
           <div className="w-full">
             <h3 className="text-[#8B3C68] font-semibold mb-2">• Experience</h3>
-            {["Past Projects (Name, Role, Year)*", "Special Appearances or Training*"].map(
-              (item, index) => (
-                <input
-                  key={index}
-                  type="text"
-                  placeholder={item}
-                  className="w-full mb-3 border border-[#8B3C68] px-4 py-2 rounded-full focus:outline-none"
-                />
-              )
-            )}
+            {[
+              "Past Projects (Name, Role, Year)*",
+              "Special Appearances or Training*",
+            ].map((item, index) => (
+              <input
+                key={index}
+                type="text"
+                placeholder={item}
+                className="w-full mb-3 border border-[#8B3C68] px-4 py-2 rounded-full focus:outline-none"
+              />
+            ))}
 
             <button className="bg-[#8B3C68] text-white px-8 py-2 rounded-full w-full mt-4">
               Save and Go back

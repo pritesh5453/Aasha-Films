@@ -8,6 +8,10 @@ import Projects from "./component/Projects.jsx";
 import Dashboard from "./component/Dashboard.jsx";
 import TopBar from "./component/TopBar.jsx";
 import OtpVerifyPage from "./component/OtpVerifyPage.jsx";
+import Registerpageprod from "./component/RegisterPageProd.jsx";
+
+
+
 
 function App() {
   return (
@@ -23,6 +27,9 @@ function App() {
         <Route path="/projects" element={<Projects />} />
         <Route path="/otpverifypage" element={<OtpVerifyPage />} />
         <Route path="/projects" element={<Projects />} />
+        <Route path="/registerpageprod" element={<Registerpageprod />} />
+        {/* <Route path="/dashboardprod" element={<Dashboard />} /> */}
+
 
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
