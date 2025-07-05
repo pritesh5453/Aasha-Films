@@ -9,6 +9,8 @@ import Dashboard from "./component/Dashboard.jsx";
 import TopBar from "./component/TopBar.jsx";
 import OtpVerifyPage from "./component/OtpVerifyPage.jsx";
 import Registerpageprod from "./component/RegisterPageProd.jsx";
+import DashboardProd from "./component/ProfileProd/DashboardProd.jsx";
+
 
 
 
@@ -28,7 +30,7 @@ function App() {
         <Route path="/otpverifypage" element={<OtpVerifyPage />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/registerpageprod" element={<Registerpageprod />} />
-        {/* <Route path="/dashboardprod" element={<Dashboard />} /> */}
+        <Route path="/dashboardprod" element={<DashboardProd />} />
 
 
         <Route path="*" element={<Navigate to="/" replace />} />

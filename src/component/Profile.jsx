@@ -20,7 +20,7 @@ export default function ProfilePage() {
       {/* Container */}
       <div className="max-w-6xl mx-auto mt-10 p-4">
         {/* ✅ Modified Top Profile Card */}
-        <div className="bg-white shadow border border-[#E5E7EB] p-4 flex flex-col sm:flex-row justify-between items-center mb-8 gap-4 sm:gap-8 w-full">
+        <div className="bg-white shadow border border-[#E5E7EB] p-8 flex flex-col sm:flex-row justify-between items-center mb-8 gap-4 sm:gap-8 w-full">
           {/* Left profile part */}
           <div className="flex items-center gap-4 w-full sm:w-auto">
             <div className="relative w-24 h-24 flex-shrink-0">
@@ -50,7 +50,7 @@ export default function ProfilePage() {
                 </div>
               </div>
               {/* Progress text BELOW circle */}
-              <div className="mt-2 text-[#8B3C68] text-sm font-semibold text-center">
+              <div className="absolute top-[100%] w-full text-center mt-1 text-[#8B3C68] text-sm font-semibold">
                 40%
               </div>
             </div>

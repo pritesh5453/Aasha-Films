@@ -1,13 +1,23 @@
 import React from "react";
-import vector from "../assets/Vector.png";
+import vector from "../../assets/Vector.png";
 
 export default function ProfileProd({ onSectionChange, selected }) {
   return (
-    <div className="w-full sm:w-[320px] md:w-[350px] bg-white shadow-md p-6 rounded-lg font-['Source_Sans_3'] text-center">
+    <div className="w-full sm:w-[380px] md:w-[350px] bg-white shadow-md p-6 rounded-lg font-['Source_Sans_3'] text-center">
       {/* Circular Progress */}
       <div className="relative w-24 h-24 mx-auto mb-4">
-        <svg className="absolute top-0 left-0 w-full h-full" viewBox="0 0 120 120">
-          <circle cx="60" cy="60" r="54" stroke="#eee" strokeWidth="12" fill="none" />
+        <svg
+          className="absolute top-0 left-0 w-full h-full"
+          viewBox="0 0 120 120"
+        >
+          <circle
+            cx="60"
+            cy="60"
+            r="54"
+            stroke="#eee"
+            strokeWidth="12"
+            fill="none"
+          />
           <circle
             cx="60"
             cy="60"
@@ -27,9 +37,9 @@ export default function ProfileProd({ onSectionChange, selected }) {
       </div>
 
       {/* Percentage and profile details */}
-      <p className="text-[#8B3C68] font-semibold text-sm mb-1">40%</p>
-      <h2 className="font-bold text-[#333] text-base">Pritesh Pawar</h2>
-      <p className="text-sm text-[#333] mb-1">Profile Type : Actress</p>
+      <p className="text-[#8B3C68] font-semibold text-sm mb-1">50%</p>
+      <h2 className="font-bold text-[#333] text-base">Emmay Entertainment</h2>
+      <p className="text-sm text-[#333] mb-1">Type of work : Movies</p>
       <p className="text-xs text-[#aaa] mb-4">Last update today</p>
 
       <button className="bg-[#8B3C68] text-white text-sm font-medium py-2 px-4 mb-5 w-full sm:w-auto rounded hover:opacity-90 transition">
@@ -40,21 +50,27 @@ export default function ProfileProd({ onSectionChange, selected }) {
       <div className="space-y-2">
         <SidebarItem
           icon="🎬"
-          label="Popular Casting Calls"
-          active={selected === "popular"}
-          onClick={() => onSectionChange("popular")}
+          label="Add Job Post"
+          active={selected === "add-job-post"}
+          onClick={() => onSectionChange("add-job-post")}
         />
         <SidebarItem
           icon="▶️"
-          label="My Applications"
-          active={selected === "my-applications"}
-          onClick={() => onSectionChange("my-applications")}
+          label="Previous Job Posts"
+          active={selected === "previous-job-posts"}
+          onClick={() => onSectionChange("previous-job-posts")}
         />
         <SidebarItem
           icon="📹"
-          label="New Casting Calls for You"
-          active={selected === "new-calls"}
-          onClick={() => onSectionChange("new-calls")}
+          label="Upcoming Projects"
+          active={selected === "upcoming-projects"}
+          onClick={() => onSectionChange("upcoming-projects")}
+        />
+        <SidebarItem
+          icon="📹"
+          label="Profiles"
+          active={selected === "profiles"}
+          onClick={() => onSectionChange("profiles")}
         />
       </div>
     </div>
