@@ -10,6 +10,7 @@ import TopBar from "./component/TopBar.jsx";
 import OtpVerifyPage from "./component/OtpVerifyPage.jsx";
 import Registerpageprod from "./component/RegisterPageProd.jsx";
 import DashboardProd from "./component/ProfileProd/DashboardProd.jsx";
+import CastingDashboard from "./component/Casting/CastingDashboard.jsx";
 
 
 
@@ -31,6 +32,7 @@ function App() {
         <Route path="/projects" element={<Projects />} />
         <Route path="/registerpageprod" element={<Registerpageprod />} />
         <Route path="/dashboardprod" element={<DashboardProd />} />
+        <Route path="/castingdash" element={<CastingDashboard />} />
 
 
         <Route path="*" element={<Navigate to="/" replace />} />
